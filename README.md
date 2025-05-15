@@ -4,7 +4,7 @@
 
 <div align='center' ><img src="./images/icon.jpg" width="30%" /></div>
 
-<font size=2><div align='center' >  [[🤗 CSVQA Benchmark](https://huggingface.co/Skywork/CSVQA)] [[📖 CSVQA Paper](https://arxiv.org/abs/)]</div></font>
+<font size=2><div align='center' >  [[🤗 CSVQA Benchmark](https://huggingface.co/Skywork)] [[📖 CSVQA Paper](https://example.com/)]</div></font>
 
 Welcome to the CSVQA-Benchmark repository! Here you will find the datasets and evaluation codes for evaluating scientific reasoning capablities of VLMS.
 
@@ -19,6 +19,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
 ## :triangular_flag_on_post: Leaderboard
 
 <!DOCTYPE html>
+<div align="center">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -232,6 +233,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
     </table>
 </body>
 </html>
+</div>
 
 
 
