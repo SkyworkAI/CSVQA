@@ -241,7 +241,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
 
 ### 1. Data Process 
 
-#### 1.1 download the original tsv format file from the official website [CSVQA](http://csvqa.com/csvqa_en.tsv)
+#### 1.1 download the original tsv format file from the official website [CSVQA](https://github.com/csvqa-benchmark/CSVQA/blob/main/data/csvqa_data.tsv)
 
 After you download the csvqa tsv file(which include the Chinese version and the English version), you can put it into the folder `./data`. And the data structure would be like this:
 
@@ -493,7 +493,7 @@ After you run the command, you will get the summary results in the folder `--out
 ```
 @article{aijian,
   title={CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs},
-  author={Ai Jian and Weijie Qiu and Xiaokun Wang and Peiyu Wang and Yunzhuo Hao and Jiangbo Pei and Yichen Wei and Yi Peng and Xuchen Song},
+  author={},
   journal={arXiv preprint arXiv:},
   year={2025}
 }
