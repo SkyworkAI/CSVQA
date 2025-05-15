@@ -5,17 +5,17 @@ When you want to add new model for evaluation, you should first set the informat
 
 # model name and the local save path
 model_name_to_path = {
-    'internvl2_5_78b': '/mnt/data_vlm/models/InternVL2_5-78B',
-    'internvl3_78b': '/mnt/data_vlm/models/InternVL3-78B',
-    'qwen2_5_vl_72b_instruct': '/mnt/data_vlm/models/Qwen2.5-VL-72B-Instruct',
+    'internvl2_5_78b': 'path to local checkpoint',
+    'internvl3_78b': 'path to local checkpoint',
+    'qwen2_5_vl_72b_instruct': 'path to local checkpoint',
 }
 
 
 # key 0 zh
 # key 1 en
 input_files = {
-    0: '/mnt/datasets_vlm/jianai/Benchmark/finaldata/csvqa_data_zh.jsonl',
-    1: '/mnt/datasets_vlm/jianai/Benchmark/finaldata/csvqa_data_en.jsonl',
+    0: 'path to csvqa_data_zh.jsonl',
+    1: 'path to csvqa_data_en.jsonl',
 }
 
 # system reference:
