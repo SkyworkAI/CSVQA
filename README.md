@@ -19,35 +19,8 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
 ## :triangular_flag_on_post: Leaderboard
 
 <!DOCTYPE html>
-<div align="center">
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Performance Table</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        b {
-            font-weight: bold;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
+<div align='center'>
 <body>
     <table>
         <thead>
@@ -77,7 +50,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td colspan="8"><b>Open-source VLM</b></td>
             </tr>
             <tr>
-                <td>Fuyu-8b</td>
+                <td>Fuyu-8b [38]</td>
                 <td>4.4</td>
                 <td>4.3</td>
                 <td>4.4</td>
@@ -87,7 +60,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>4.5</td>
             </tr>
             <tr>
-                <td>MonoInternVL</td>
+                <td>MonoInternVL [20]</td>
                 <td>9.7</td>
                 <td>7.3</td>
                 <td>8.2</td>
@@ -97,7 +70,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>9.9</td>
             </tr>
             <tr>
-                <td>Phi-4</td>
+                <td>Phi-4 [39]</td>
                 <td>10.7</td>
                 <td>11.7</td>
                 <td>13.5</td>
@@ -107,7 +80,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>11.0</td>
             </tr>
             <tr>
-                <td>Deepseek-VL2</td>
+                <td>Deepseek-VL2 [40]</td>
                 <td>6.1</td>
                 <td>6.3</td>
                 <td>8.2</td>
@@ -117,7 +90,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>6.4</td>
             </tr>
             <tr>
-                <td>Gamma3-27b</td>
+                <td>Gamma3-27b [41]</td>
                 <td>22.9</td>
                 <td>26.0</td>
                 <td>23.5</td>
@@ -127,7 +100,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>22.6</td>
             </tr>
             <tr>
-                <td>Idefics3-8b</td>
+                <td>Idefics3-8b [43]</td>
                 <td>10.2</td>
                 <td>11.3</td>
                 <td>15.3</td>
@@ -137,7 +110,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>10.8</td>
             </tr>
             <tr>
-                <td>Internvl2-5-78b</td>
+                <td>Internvl2-5-78b [9]</td>
                 <td>28.4</td>
                 <td>36.3</td>
                 <td>36.1</td>
@@ -147,7 +120,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>29.3</td>
             </tr>
             <tr>
-                <td>Internvl3-78b</td>
+                <td>Internvl3-78b [42]</td>
                 <td>36.9</td>
                 <td><b>46.0</b></td>
                 <td><b>41.1</b></td>
@@ -157,7 +130,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>38.0</td>
             </tr>
             <tr>
-                <td>LLaVA1.5-13b</td>
+                <td>LLaVA1.5-13b [44]</td>
                 <td>7.7</td>
                 <td>10.3</td>
                 <td>10.3</td>
@@ -167,7 +140,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>8.1</td>
             </tr>
             <tr>
-                <td>Pixtral-12b</td>
+                <td>Pixtral-12b [45]</td>
                 <td>11.0</td>
                 <td>15.3</td>
                 <td>8.8</td>
@@ -177,7 +150,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>11.0</td>
             </tr>
             <tr>
-                <td>QVQ-72b</td>
+                <td>QVQ-72b [47]</td>
                 <td>36.5</td>
                 <td>42.0</td>
                 <td>40.2</td>
@@ -187,7 +160,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>36.9</td>
             </tr>
             <tr>
-                <td>Qwen2.5-72b</td>
+                <td>Qwen2.5-72b [46]</td>
                 <td><b>38.5</b></td>
                 <td>45.7</td>
                 <td><b>40.8</b></td>
@@ -200,7 +173,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td colspan="8"><b>Closed-source VLM</b></td>
             </tr>
             <tr>
-                <td>GPT-4o</td>
+                <td>GPT-4o [34]</td>
                 <td>23.7</td>
                 <td>27.7</td>
                 <td>23.5</td>
@@ -210,7 +183,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>24.0</td>
             </tr>
             <tr>
-                <td>Claude3.7</td>
+                <td>Claude3.7 [1]</td>
                 <td>36.9</td>
                 <td>41.7</td>
                 <td>38.1</td>
@@ -220,7 +193,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
                 <td>37.0</td>
             </tr>
             <tr>
-                <td>Gemini2.0-flash</td>
+                <td>Gemini2.0-flash [14]</td>
                 <td><b>44.1</b></td>
                 <td><b>45.0</b></td>
                 <td><b>45.2</b></td>
@@ -232,8 +205,8 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
         </tbody>
     </table>
 </body>
-</html>
 </div>
+</html>
 
 
 
