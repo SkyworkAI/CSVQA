@@ -1,6 +1,6 @@
 
 
-# CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs
+# <div align='center' >CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs</div>
 
 <div align='center' ><img src="./images/icon.jpg" width="30%" /></div>
 
