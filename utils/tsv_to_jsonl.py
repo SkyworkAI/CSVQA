@@ -14,7 +14,7 @@ category_map = {
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_dir', type=str, default='/mnt/datasets_vlm/jianai/Benchmark/csvqa_benchmark/data', help='path to saved tsv files')
+    parser.add_argument('--data_dir', type=str, default='', help='path to saved tsv files')
     parser.add_argument('--image_dir', type=str, default='', help='path to saved image files')
     parser.add_argument('--is_direct', type=int, default=0)
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         exit('data_dir {} does not exist'.format(args.data_dir))
 
     # single file includes both Chinese version question and English version questio
-    file = os.path.join(args.data_dir, 'csvqa_data_new.tsv')
+    file = os.path.join(args.data_dir, 'csvqa_data.tsv')
 
     if args.image_dir == '':
         args.image_dir = os.path.join(args.data_dir, 'images')
@@ -99,7 +99,7 @@ if __name__ == '__main__':
             tmp_json['difficulty'] = info['difficulty']
             
             # save base64 image
-            image = eval(info['image'])[0]
+            image = info['image']
             image = base64.b64decode(image.encode('utf-8'))
             if not os.path.exists(tmp_json['image']):
                 with open(tmp_json['image'], 'wb') as f:
@@ -167,7 +167,7 @@ if __name__ == '__main__':
             tmp_json['difficulty'] = info['difficulty']
             
             # save base64 image
-            image = eval(info['image'])[0]
+            image = info['image']
             image = base64.b64decode(image.encode('utf-8'))
             if not os.path.exists(tmp_json['image']):
                 with open(tmp_json['image'], 'wb') as f:
