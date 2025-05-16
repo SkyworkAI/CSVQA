@@ -1,10 +1,10 @@
 
 
-# CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs
+# <div align='center' >CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs</div>
 
 <div align='center' ><img src="./images/icon.jpg" width="30%" /></div>
 
-<font size=2><div align='center' >  [[🤗 CSVQA Benchmark](https://huggingface.co/Skywork/CSVQA)] [[📖 CSVQA Paper](https://arxiv.org/abs/)]</div></font>
+<font size=2><div align='center' >  [[🤗 CSVQA Benchmark](https://huggingface.co/datasets/Skywork/CSVQA)] [[📖 CSVQA Paper](https://example.com/)]</div></font>
 
 Welcome to the CSVQA-Benchmark repository! Here you will find the datasets and evaluation codes for evaluating scientific reasoning capablities of VLMS.
 
@@ -20,217 +20,200 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Performance Table</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        b {
-            font-weight: bold;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <td><b>Model</b></td>
-                <td><b>Overall</b></td>
-                <td><b>Biology</b></td>
-                <td><b>Chemistry</b></td>
-                <td><b>Math</b></td>
-                <td><b>Physics</b></td>
-                <td><b>Open</b></td>
-                <td><b>MC</b></td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Random Choice</td>
-                <td>5.2</td>
-                <td>5.1</td>
-                <td>6.2</td>
-                <td>4.5</td>
-                <td>5.7</td>
-                <td>5.7</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td colspan="8"><b>Open-source VLM</b></td>
-            </tr>
-            <tr>
-                <td>Fuyu-8b</td>
-                <td>4.4</td>
-                <td>4.3</td>
-                <td>4.4</td>
-                <td>5.7</td>
-                <td>3.6</td>
-                <td>3.0</td>
-                <td>4.5</td>
-            </tr>
-            <tr>
-                <td>MonoInternVL</td>
-                <td>9.7</td>
-                <td>7.3</td>
-                <td>8.2</td>
-                <td>11.1</td>
-                <td>11.4</td>
-                <td>7.0</td>
-                <td>9.9</td>
-            </tr>
-            <tr>
-                <td>Phi-4</td>
-                <td>10.7</td>
-                <td>11.7</td>
-                <td>13.5</td>
-                <td>9.5</td>
-                <td>8.8</td>
-                <td>8.0</td>
-                <td>11.0</td>
-            </tr>
-            <tr>
-                <td>Deepseek-VL2</td>
-                <td>6.1</td>
-                <td>6.3</td>
-                <td>8.2</td>
-                <td>4.4</td>
-                <td>5.5</td>
-                <td>2.0</td>
-                <td>6.4</td>
-            </tr>
-            <tr>
-                <td>Gamma3-27b</td>
-                <td>22.9</td>
-                <td>26.0</td>
-                <td>23.5</td>
-                <td>27.6</td>
-                <td>16.6</td>
-                <td>26.0</td>
-                <td>22.6</td>
-            </tr>
-            <tr>
-                <td>Idefics3-8b</td>
-                <td>10.2</td>
-                <td>11.3</td>
-                <td>15.3</td>
-                <td>7.3</td>
-                <td>7.6</td>
-                <td>3.0</td>
-                <td>10.8</td>
-            </tr>
-            <tr>
-                <td>Internvl2-5-78b</td>
-                <td>28.4</td>
-                <td>36.3</td>
-                <td>36.1</td>
-                <td>24.4</td>
-                <td>19.4</td>
-                <td>17.0</td>
-                <td>29.3</td>
-            </tr>
-            <tr>
-                <td>Internvl3-78b</td>
-                <td>36.9</td>
-                <td><b>46.0</b></td>
-                <td><b>41.1</b></td>
-                <td>34.9</td>
-                <td>28.7</td>
-                <td>24.0</td>
-                <td>38.0</td>
-            </tr>
-            <tr>
-                <td>LLaVA1.5-13b</td>
-                <td>7.7</td>
-                <td>10.3</td>
-                <td>10.3</td>
-                <td>5.4</td>
-                <td>5.5</td>
-                <td>2.0</td>
-                <td>8.1</td>
-            </tr>
-            <tr>
-                <td>Pixtral-12b</td>
-                <td>11.0</td>
-                <td>15.3</td>
-                <td>8.8</td>
-                <td>9.5</td>
-                <td>10.7</td>
-                <td>11.0</td>
-                <td>11.0</td>
-            </tr>
-            <tr>
-                <td>QVQ-72b</td>
-                <td>36.5</td>
-                <td>42.0</td>
-                <td>40.2</td>
-                <td>33.0</td>
-                <td>32.2</td>
-                <td>31.0</td>
-                <td>36.9</td>
-            </tr>
-            <tr>
-                <td>Qwen2.5-72b</td>
-                <td><b>38.5</b></td>
-                <td>45.7</td>
-                <td><b>40.8</b></td>
-                <td><b>38.1</b></td>
-                <td><b>31.8</b></td>
-                <td>29.0</td>
-                <td><b>39.2</b></td>
-            </tr>
-            <tr>
-                <td colspan="8"><b>Closed-source VLM</b></td>
-            </tr>
-            <tr>
-                <td>GPT-4o</td>
-                <td>23.7</td>
-                <td>27.7</td>
-                <td>23.5</td>
-                <td>24.1</td>
-                <td>20.6</td>
-                <td>19.0</td>
-                <td>24.0</td>
-            </tr>
-            <tr>
-                <td>Claude3.7</td>
-                <td>36.9</td>
-                <td>41.7</td>
-                <td>38.1</td>
-                <td>38.4</td>
-                <td>31.3</td>
-                <td><b>35.0</b></td>
-                <td>37.0</td>
-            </tr>
-            <tr>
-                <td>Gemini2.0-flash</td>
-                <td><b>44.1</b></td>
-                <td><b>45.0</b></td>
-                <td><b>45.2</b></td>
-                <td><b>48.9</b></td>
-                <td><b>39.1</b></td>
-                <td><b>46.0</b></td>
-                <td><b>44.0</b></td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+<div align='center'>
+<table>
+  <thead>
+    <tr>
+      <th><b>Model</b></th>
+      <th><b>Overall</b></th>
+      <th><b>Biology</b></th>
+      <th><b>Chemistry</b></th>
+      <th><b>Math</b></th>
+      <th><b>Physics</b></th>
+      <th><b>Open</b></th>
+      <th><b>MC</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Random Choice</td>
+      <td>5.2</td>
+      <td>5.1</td>
+      <td>6.2</td>
+      <td>4.5</td>
+      <td>5.7</td>
+      <td>0</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td colspan="8"><b>Open-source VLM</b></td>
+    </tr>
+    <tr>
+      <td>Fuyu-8B</td>
+      <td>4.9</td>
+      <td>6.3</td>
+      <td>5.6</td>
+      <td>3.5</td>
+      <td>4.3</td>
+      <td>2.0</td>
+      <td>5.1</td>
+    </tr>
+    <tr>
+      <td>Deepseek-VL2</td>
+      <td>6.2</td>
+      <td>7.0</td>
+      <td>6.2</td>
+      <td>7.6</td>
+      <td>4.5</td>
+      <td>8.0</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>LLaVAL5-13B</td>
+      <td>7.5</td>
+      <td>10.7</td>
+      <td>9.4</td>
+      <td>5.4</td>
+      <td>5.5</td>
+      <td>4.0</td>
+      <td>7.8</td>
+    </tr>
+    <tr>
+      <td>MonoInternVL</td>
+      <td>9.3</td>
+      <td>7.3</td>
+      <td>9.1</td>
+      <td>9.2</td>
+      <td>10.9</td>
+      <td>3.0</td>
+      <td>9.8</td>
+    </tr>
+    <tr>
+      <td>IdeHe3-8b</td>
+      <td>10.1</td>
+      <td>11.7</td>
+      <td>15.2</td>
+      <td>7.0</td>
+      <td>7.1</td>
+      <td>4.0</td>
+      <td>10.6</td>
+    </tr>
+    <tr>
+      <td>Pixtral-12B</td>
+      <td>10.5</td>
+      <td>15.3</td>
+      <td>8.8</td>
+      <td>8.6</td>
+      <td>10.0</td>
+      <td>5.0</td>
+      <td>10.9</td>
+    </tr>
+    <tr>
+      <td>Phi-4</td>
+      <td>11.5</td>
+      <td>13.3</td>
+      <td>16.1</td>
+      <td>8.9</td>
+      <td>8.3</td>
+      <td>7.0</td>
+      <td>11.8</td>
+    </tr>
+    <tr>
+      <td>Gemma3-27B</td>
+      <td>22.9</td>
+      <td>26.0</td>
+      <td>23.5</td>
+      <td>27.0</td>
+      <td>17.1</td>
+      <td>23.0</td>
+      <td>22.9</td>
+    </tr>
+    <tr>
+      <td>Internvl2-5-78B</td>
+      <td>28.4</td>
+      <td>36.3</td>
+      <td>36.1</td>
+      <td>24.1</td>
+      <td>19.7</td>
+      <td>16.0</td>
+      <td>29.3</td>
+    </tr>
+    <tr>
+      <td>QVQ-72B</td>
+      <td>36.6</td>
+      <td>40.7</td>
+      <td>41.3</td>
+      <td>33.7</td>
+      <td>32.0</td>
+      <td>32.0</td>
+      <td>36.9</td>
+    </tr>
+    <tr>
+      <td>Internvl3-78B</td>
+      <td>37.4</td>
+      <td><b>46.0</b></td>
+      <td>41.1</td>
+      <td>36.5</td>
+      <td>28.9</td>
+      <td>30.0</td>
+      <td>38.0</td>
+    </tr>
+    <tr>
+      <td>Qwen2.SVL-72B</td>
+      <td>38.5</td>
+      <td>45.7</td>
+      <td>40.8</td>
+      <td>37.5</td>
+      <td>32.2</td>
+      <td>29.0</td>
+      <td>39.2</td>
+    </tr>
+    <tr>
+      <td colspan="8"><b>Closed-source VLM</b></td>
+    </tr>
+    <tr>
+      <td>GPT-4o</td>
+      <td>23.6</td>
+      <td>28.0</td>
+      <td>23.5</td>
+      <td>23.5</td>
+      <td>20.6</td>
+      <td>18.0</td>
+      <td>24.0</td>
+    </tr>
+    <tr>
+      <td>Claude3.7</td>
+      <td>36.6</td>
+      <td>41.7</td>
+      <td>38.1</td>
+      <td>37.1</td>
+      <td>31.3</td>
+      <td>32.0</td>
+      <td>36.9</td>
+    </tr>
+    <tr>
+      <td>Gemini2.0-flash</td>
+      <td><b>44.1</b></td>
+      <td>45.0</td>
+      <td><b>45.5</b></td>
+      <td><b>47.6</b></td>
+      <td><b>39.8</b></td>
+      <td><b>46.0</b></td>
+      <td><b>44.0</b></td>
+    </tr>
+    <tr>
+      <td>o1</td>
+      <td><b>49.6</b></td>
+      <td><b>46.2</b></td>
+      <td><b>45.1</b></td>
+      <td><b>59.0</b></td>
+      <td><b>49.1</b></td>
+      <td><b>41.3</b></td>
+      <td><b>50.2</b></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </html>
 
 
@@ -239,7 +222,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
 
 ### 1. Data Process 
 
-#### 1.1 download the original tsv format file from the official website [CSVQA](http://csvqa.com/csvqa_en.tsv)
+#### 1.1 download the original tsv format file from the official website [CSVQA](https://github.com/csvqa-benchmark/CSVQA/blob/main/data/csvqa_data.tsv)
 
 After you download the csvqa tsv file(which include the Chinese version and the English version), you can put it into the folder `./data`. And the data structure would be like this:
 
@@ -491,7 +474,7 @@ After you run the command, you will get the summary results in the folder `--out
 ```
 @article{aijian,
   title={CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs},
-  author={Ai Jian and Weijie Qiu and Xiaokun Wang and Peiyu Wang and Yunzhuo Hao and Jiangbo Pei and Yichen Wei and Yi Peng and Xuchen Song},
+  author={},
   journal={arXiv preprint arXiv:},
   year={2025}
 }
