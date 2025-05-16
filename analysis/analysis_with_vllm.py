@@ -121,7 +121,7 @@ if __name__ == "__main__":
         max_tokens=16000,
         n=1,
         top_p=1.0,
-        temperature=1.0,
+        temperature=0.0,
         repetition_penalty=1.0,
 
     )
