@@ -159,7 +159,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
       <td>38.0</td>
     </tr>
     <tr>
-      <td>Qwen2.SVL-72B [30]</td>
+      <td>Qwen2.SVL-72B</td>
       <td>38.5</td>
       <td>45.7</td>
       <td>40.8</td>
@@ -202,7 +202,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
       <td><b>44.0</b></td>
     </tr>
     <tr>
-      <td>o1 [43]</td>
+      <td>o1</td>
       <td><b>49.6</b></td>
       <td><b>46.2</b></td>
       <td><b>45.1</b></td>
