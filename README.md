@@ -69,7 +69,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
       <td>6.0</td>
     </tr>
     <tr>
-      <td>LLaVAL5-13B</td>
+      <td>LLaVA1.5-13B</td>
       <td>7.5</td>
       <td>10.7</td>
       <td>9.4</td>
@@ -89,7 +89,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
       <td>9.8</td>
     </tr>
     <tr>
-      <td>IdeHe3-8b</td>
+      <td>Idefics3-8B</td>
       <td>10.1</td>
       <td>11.7</td>
       <td>15.2</td>
@@ -129,7 +129,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
       <td>22.9</td>
     </tr>
     <tr>
-      <td>Internvl2-5-78B</td>
+      <td>InternVL2.5-78B</td>
       <td>28.4</td>
       <td>36.3</td>
       <td>36.1</td>
@@ -149,7 +149,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
       <td>36.9</td>
     </tr>
     <tr>
-      <td>Internvl3-78B</td>
+      <td>InternVL3-78B</td>
       <td>37.4</td>
       <td><b>46.0</b></td>
       <td>41.1</td>
@@ -159,7 +159,7 @@ CSVQA contains 1,378 expert-annotated questions with moderate average length, ba
       <td>38.0</td>
     </tr>
     <tr>
-      <td>Qwen2.SVL-72B</td>
+      <td>Qwen2.5-VL-72B</td>
       <td>38.5</td>
       <td>45.7</td>
       <td>40.8</td>
