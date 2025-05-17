@@ -472,7 +472,7 @@ After you run the command, you will get the summary results in the folder `--out
  If you find our benchmark useful in your research, please consider citing this BibTex: 
 
 ```
-@article{aijian,
+@article{,
   title={CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs},
   author={},
   journal={arXiv preprint arXiv:},
