@@ -472,10 +472,13 @@ After you run the command, you will get the summary results in the folder `--out
  If you find our benchmark useful in your research, please consider citing this BibTex: 
 
 ```
-@article{,
-  title={CSVQA: A Chinese Multimodal Benchmark for Evaluating Scientific Reasoning Capabilities of VLMs},
-  author={},
-  journal={arXiv preprint arXiv:},
-  year={2025}
+@misc{jian2025csvqachinesemultimodalbenchmark,
+      title={CSVQA: A Chinese Multimodal Benchmark for Evaluating STEM Reasoning Capabilities of VLMs}, 
+      author={Ai Jian and Weijie Qiu and Xiaokun Wang and Peiyu Wang and Yunzhuo Hao and Jiangbo Pei and Yichen Wei and Yi Peng and Xuchen Song},
+      year={2025},
+      eprint={2505.24120},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.24120}, 
 }
 ```
