@@ -4,7 +4,7 @@
 
 <div align='center' ><img src="./images/icon.jpg" width="30%" /></div>
 
-<font size=2><div align='center' >  [[🤗 CSVQA Benchmark](https://huggingface.co/datasets/Skywork/CSVQA)] [[📖 CSVQA Paper](https://example.com/)]</div></font>
+<font size=2><div align='center' >  [[🤗 CSVQA Benchmark](https://huggingface.co/datasets/Skywork/CSVQA)] [[📖 CSVQA Paper](https://arxiv.org/pdf/2505.24120)]</div></font>
 
 Welcome to the CSVQA-Benchmark repository! Here you will find the datasets and evaluation codes for evaluating scientific reasoning capablities of VLMS.
 
